@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(236, 242, 248);
+}
+p{
+    font-family: "Barlow Semi Condensed";
+    font-weight: 500;
+    font-size : 13px;
+    color: white;
+}
+#main-container{
+    padding: 6% 2%;
+}
+.content-box{
+    border-radius: 8px;
+    margin: 12px;
+    padding: 0px 26px 26px 26px;
+    margin-top : 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#quote{
+    position: absolute;
+    right: 20%;
+    top:0;
+    z-index: 1;
+}
+.box-header{
+    padding : 20px 0px;
+    display: flex;
+    z-index: 2;
+}
+.box-header-right{
+    margin-left: 16px;
+}
+.header-img{
+    margin-left: 0px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.header-status{
+    opacity: 50%;
+}
+.main-txt{
+    font-size : 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+.sub-txt{
+    opacity: 70%;
+}
+#ib-1{
+    position: relative;
+    background-color: rgb(117, 65, 200);
+}
+#ib-2{
+    background-color: rgb(72, 85, 106);
+}
+#ib-3,#ib-5{
+    background-color: white;
+}
+
+#ib-3 p,#ib-5 p{
+    color: rgb(25, 33, 46);
+}
+#ib-4{
+    background-color: rgb(25, 33, 46);
+}
+#header-4{
+    border: 2px solid rgb(117, 65, 200);
+}
+#header-1{
+    border: 2px solid #A775F1;
+    
+}
+
+@media (min-width : 720px) {
+    #main-container{
+        display: flex;
+        padding:0;
+        max-width: 1440px;
+        margin: 40px 200px;
+        position: absolute;
+        top: 6%;
+    }
+    .content-box{
+        margin : 12px;
+    }
+    .left-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .right-container{
+        flex-basis: 100%;
+    }
+    .left-up{
+        flex-basis: 50%;
+        display: flex;
+    }
+    .left-down{
+        flex-basis: 50%;
+        display: flex;
+    }
+    #ib-1{
+        flex-basis: 0px;
+        flex-grow: 2;
+    }
+    #ib-2{
+        flex-basis: 0px;
+        flex-grow: 1;
+    }
+    #ib-3{
+        flex-basis: 0px;
+        flex-grow: 1;
+    }
+    #ib-4{
+        flex-basis: 0px;
+        flex-grow: 2;
+    }#ib-5{
+        height: auto;
+        height: 96%;
+    }
+
+}
